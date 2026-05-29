@@ -58,6 +58,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)CommonTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -85,12 +90,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="utils\singleton_obj.cpp" />
     <ClCompile Include="wrapper_thread.cpp" />
     <ClInclude Include="AsyncEvenLoopInvoker.h" />
     <ClInclude Include="AsyncInvoker.h" />
     <ClInclude Include="CommonToolsDef.h" />
     <ClInclude Include="CommonToolsSpace.h" />
     <ClInclude Include="commontools_global.h" />
+    <ClInclude Include="utils\singleton_obj.h" />
     <ClInclude Include="wrapper_thread.h" />
     <QtMoc Include="EventLoopWorker.h" />
     <ClInclude Include="JobExecuteThread.h" />

@@ -1,0 +1,7 @@
+﻿#include "singleton_obj.h"
+
+BEGIN_COMMON_TOOLS_SPACE
+
+
+
+END_COMMON_TOOLS_SPACE

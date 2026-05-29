@@ -36,6 +36,9 @@
     <Filter Include="wrapper">
       <UniqueIdentifier>{637bb947-685e-42ca-a768-b932093c29bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="singleton">
+      <UniqueIdentifier>{4c35bc6c-38b6-45d6-8be8-5f1b7a02602b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="commontools_global.h">
@@ -65,6 +68,9 @@
     <ClInclude Include="wrapper_thread.h">
       <Filter>wrapper</Filter>
     </ClInclude>
+    <ClInclude Include="utils\singleton_obj.h">
+      <Filter>singleton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ObjProduceFactory.cpp">
@@ -84,6 +90,9 @@
     </ClCompile>
     <ClCompile Include="wrapper_thread.cpp">
       <Filter>wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\singleton_obj.cpp">
+      <Filter>singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
